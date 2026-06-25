@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Tech Blog</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#posts">Posts</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container text-center">
+        <h1>Welcome To My Blog</h1>
+        <p>Learn Web Development, AI, Programming and Technology.</p>
+        <a href="#posts" class="btn btn-primary btn-lg">Read Articles</a>
+    </div>
+</section>
+
+<!-- Search -->
+<section class="container my-5">
+    <input type="text" id="searchInput" class="form-control" placeholder="Search articles...">
+</section>
+
+<!-- Blog Posts -->
+<section id="posts" class="container mb-5">
+    <div class="row g-4" id="blogContainer">
+
+        <div class="col-md-4 blog-card">
+            <div class="card h-100">
+                <img src="https://picsum.photos/400/250?1" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">HTML Basics</h5>
+                    <p class="card-text">
+                        Learn HTML from scratch and build your first website.
+                    </p>
+                    <button class="btn btn-primary read-more">
+                        Read More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 blog-card">
+            <div class="card h-100">
+                <img src="https://picsum.photos/400/250?2" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">CSS Mastery</h5>
+                    <p class="card-text">
+                        Create beautiful and responsive websites with CSS.
+                    </p>
+                    <button class="btn btn-primary read-more">
+                        Read More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 blog-card">
+            <div class="card h-100">
+                <img src="https://picsum.photos/400/250?3" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">JavaScript Guide</h5>
+                    <p class="card-text">
+                        Make your websites interactive using JavaScript.
+                    </p>
+                    <button class="btn btn-primary read-more">
+                        Read More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 blog-card">
+            <div class="card h-100">
+                <img src="https://picsum.photos/400/250?4" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Bootstrap Framework</h5>
+                    <p class="card-text">
+                        Build responsive websites faster with Bootstrap.
+                    </p>
+                    <button class="btn btn-primary read-more">
+                        Read More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 blog-card">
+            <div class="card h-100">
+                <img src="https://picsum.photos/400/250?5" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Python Programming</h5>
+                    <p class="card-text">
+                        Learn Python and automate tasks easily.
+                    </p>
+                    <button class="btn btn-primary read-more">
+                        Read More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 blog-card">
+            <div class="card h-100">
+                <img src="https://picsum.photos/400/250?6" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Artificial Intelligence</h5>
+                    <p class="card-text">
+                        Discover AI and Machine Learning concepts.
+                    </p>
+                    <button class="btn btn-primary read-more">
+                        Read More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="bg-light py-5">
+    <div class="container text-center">
+        <h2>About Blog</h2>
+        <p>
+            This blog shares tutorials about programming,
+            web development, AI and technology.
+        </p>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="container py-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+
+    <form>
+        <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name">
+        </div>
+
+        <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email">
+        </div>
+
+        <div class="mb-3">
+            <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+        </div>
+
+        <button class="btn btn-primary">
+            Send Message
+        </button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">
+        © 2026 Tech Blog. All Rights Reserved.
+    </p>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
